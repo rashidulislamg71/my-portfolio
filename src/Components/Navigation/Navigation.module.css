@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.nav_styles {
+  position: relative;
+}
+.navigation_section {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 3px;
+  background-color: rgba(245, 245, 245, 0.808);
+}
+
+.logo {
+  width: 30%;
+  padding: 10px 30px;
+  background: #0d3033cc;
+  box-shadow: 2px 2px 10px #020505d8;
+  border-radius: 5px;
+}
+
+.logo i {
+  font-size: 22px;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #e2e9df;
+  text-shadow: 1px 1px 10px rgb(26, 26, 26);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.logo .r,
+.i {
+  font-size: 30px;
+  font-style: normal;
+  color: #ffff;
+}
+
+.menu {
+  width: 60%;
+  background-color: rgb(119, 224, 189);
+  padding: 16px;
+  background: #0d3033cc;
+  box-shadow: 2px 2px 10px #020505d8;
+  border-radius: 5px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  font-size: 18px;
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.menu ul li a:hover,
+.DarkOrLight:hover {
+  color: rgb(42, 11, 51);
+}
+
+.DarkOrLight {
+  width: 10%;
+  background-color: rgb(108, 106, 197);
+  padding: 16px;
+  text-align: center;
+  background: #0d3033cc;
+  box-shadow: 2px 2px 10px #020505d8;
+  border-radius: 5px;
+  color: #ffff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.hero_section {
+  margin-top:70px;
+  height: 450px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(43,47,64,1) 0%, rgba(30,30,70,1) 0%, rgba(43,80,91,1) 82%, rgba(43,85,92,1) 100%);
+  position: relative;
+}
+
+.hero_text {
+  font-size: 50px;
+  color: white;
+  margin-left: 300px;
+  padding-top: 330px;
+  transform: translateY(-50%);
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  line-height: 60px;
+  width: 600px;
+  height: 300px;
+}
+
+.download_resumeBtn {
+  text-align: right;
+}
+
+.download_resumeBtn button {
+  padding: 11px 20px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  cursor: pointer;
+  z-index: 0;
+  position: absolute;
+  top: 300px;
+  right: 400px;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  transition: all .8s ease;
+}
+
+.download_resumeBtn button:before {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background:rgb(38, 61, 83, 0.377);
+  transition: all .8s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.download_resumeBtn button:hover:before {
+  left:0;
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+.download_resumeBtn button:hover{
+  box-shadow: 3px 3px 10px #ffffff;
+}
+
+
+
+.animation_box{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 2px solid rgb(54, 173, 177);
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.animation .animation_box:nth-child(1){
+  position: absolute;
+    left: -10px;
+    top: -4px;
+    animation: animate 9s linear infinite;
+}
+.animation .animation_box:nth-child(2){
+  position: absolute;
+    left: 200px;
+    top: 29px;
+    animation: animate 5s linear infinite;
+}
+.animation .animation_box:nth-child(3){
+  position: absolute;
+    left: 1000px;
+    top: 44px;
+    animation: animate 7s linear infinite;
+}
+.animation .animation_box:nth-child(4){
+  position: absolute;
+    right: 10px;
+    top: 20px;
+    animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(5){
+  position: absolute;
+    left: 450px;
+    top: 100px;
+    animation: animate 6s linear infinite;
+}
+.animation .animation_box:nth-child(6){
+  position: absolute;
+    left: 700px;
+    top: 4px;
+    animation: animate 3s linear infinite;
+}
+.animation .animation_box:nth-child(7){
+  position: absolute;
+  left: 1043px;
+  top: 209px;
+    animation: animate 10s linear infinite;
+    
+}
+.animation .animation_box:nth-child(8){
+  position: absolute;
+    left: 830px;
+    top: 250px;
+    animation: animate 4s linear infinite;
+}
+.animation .animation_box:nth-child(9){
+  position: absolute;
+    left: 100px;
+    top: 350px;
+    animation: animate 6s linear infinite;
+}
+.animation .animation_box:nth-child(10){
+  position: absolute;
+    left: 100px;
+    top: 200px;
+    animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(11){
+  position: absolute;
+    left: 190px;
+    top: 240px;
+    animation: animate 9s linear infinite;
+}
+.animation .animation_box:nth-child(12){
+  position: absolute;
+    left:580px;
+    top:200px;
+    animation: animate 3s linear infinite;
+}
+.animation .animation_box:nth-child(13){
+  position: absolute;
+    left: 900px;
+    bottom: 10px;
+    animation: animate 6s linear infinite;
+}
+.animation .animation_box:nth-child(14){
+  position: absolute;
+    right: -10px;
+    bottom: 40px;
+    animation: animate 5s linear infinite;
+}
+.animation .animation_box:nth-child(15){
+  position: absolute;
+    right: 50px;
+    top: 239px;
+    animation: animate 3s linear infinite;
+}
+.animation .animation_box:nth-child(16){
+  position: absolute;
+    left: 500px;
+    bottom: 69px;
+    animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(17){
+  position: absolute;
+  left: 1080px;
+  bottom: 85px;
+    animation: animate 4s linear infinite;
+}
+
+
+@keyframes animate{
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.5) translateY(-70px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
