@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import styles from "./Navigation.module.css";
+import portfolio_logo from "../../assets/images/portfolio_logo.png"
 
 const Navigation = () => {
   return (
@@ -14,10 +15,11 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
           >
-            <i>
+            {/* <i>
               <span className={styles.r}>R</span>ASHIDUL{" "}
               <span className={styles.i}>I</span>SALAM
-            </i>
+            </i> */}
+            <img src={portfolio_logo} alt="" />
           </Link>
         </div>
 
