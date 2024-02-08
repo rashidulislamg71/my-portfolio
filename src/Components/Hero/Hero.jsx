@@ -8,7 +8,7 @@ const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
   const speed = 150; // Typing speed in milliseconds
 
-  const fullText = `I am a Front-End  Developer ....!`;
+  const fullText = ` Hello, This is Rashidul Islam as a Front-End  Developer ....!`;
 
   useEffect(() => {
     let currentIndex = 0;

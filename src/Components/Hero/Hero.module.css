@@ -4,7 +4,7 @@
 
 .hero_section {
   margin-top:70px;
-  height: 450px;
+  height: 90vh;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(43,47,64,1) 0%, rgba(30,30,70,1) 0%, rgba(43,80,91,1) 82%, rgba(43,85,92,1) 100%);
   position: relative;
 }
