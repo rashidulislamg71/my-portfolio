@@ -1,5 +1,104 @@
+.contact_section {
+  font-family: sans-serif;
+  height: 90vh;
+  background-color: rgb(81, 94, 105);
+  padding: 20px 60px;
+  color: white;
+}
 
-.contact_section{
-    height: 300px;
-    background-color: rgb(115, 151, 182);
+h2 {
+  text-align: center;
+  border-bottom: 1px solid rgb(106, 112, 116);
+  width: fit-content;
+  margin: 40px auto;
+}
+
+.contact_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  
+}
+
+.title {
+  border: 1px solid rgb(117, 117, 117);
+  width: fit-content;
+  color: rgb(21, 44, 65);
+  margin-bottom: 30px;
+  margin: 30px  auto 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px;
+}
+
+.title h3 {
+}
+
+.title sapn {
+  border-right: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(253, 253, 253);
+  padding: 3px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linkedin,
+.facebook,
+.github,
+.whatsApp,
+.twittr {
+  display: flex;
+  justify-content: center;
+  background-color: #ffff;
+  border-radius: 2px;
+}
+
+.social .linkedin {
+  color: rgb(10, 102, 194);
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+.social .facebook {
+  color: rgb(8, 102, 255);
+  font-size: 36px;
+  padding: 2px;
+}
+
+.social .twittr {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 80px;
+  font-size: 40px;
+}
+
+.social .whatsApp {
+  color: rgb(42, 177, 63);
+  font-size: 41px;
+}
+
+.social .github {
+  color: rgb(31, 35, 40);
+  margin-top: 80px;
+  font-size: 41px;
+}
+
+.emailAndPhone {
+}
+
+.address {
+}
+
+.social,
+.emailAndPhone,
+address {
 }

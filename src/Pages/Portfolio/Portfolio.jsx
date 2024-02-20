@@ -5,10 +5,11 @@ import About from '../../Components/About/About';
 import Projeacts from '../../Components/Projects/Projects';
 import Skills from './../../Components/Skills/Skills';
 import Contact from './../../Components/Contact/Contact';
+import styles from "./Portfolio.module.css";
 
 function Portfolio() {
     return (
-        <div>
+        <div className={styles.portfolio}>
             <section id="navigation_section">
                 <Navigation />
             </section>

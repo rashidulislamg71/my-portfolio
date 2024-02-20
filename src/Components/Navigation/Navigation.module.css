@@ -2,8 +2,10 @@
 
 .nav_styles {
   position: relative;
+  
 }
 .navigation_section {
+  max-width: 1400px;
   z-index: 1;
   display: flex;
   justify-content: center;
