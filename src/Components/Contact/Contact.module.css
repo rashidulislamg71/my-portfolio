@@ -10,25 +10,25 @@ h2 {
   text-align: center;
   border-bottom: 1px solid rgb(106, 112, 116);
   width: fit-content;
-  margin: 40px auto;
+  margin: 40px auto 70px;
 }
 
 .contact_info {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  
+  flex-wrap: wrap;
 }
 
 .title {
   border: 1px solid rgb(117, 117, 117);
   width: fit-content;
   color: rgb(21, 44, 65);
-  margin-bottom: 30px;
-  margin: 30px  auto 35px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
   padding: 5px;
 }
@@ -59,46 +59,75 @@ h2 {
   display: flex;
   justify-content: center;
   background-color: #ffff;
-  border-radius: 2px;
+  border-radius: 3px;
+  font-size: 35px;
 }
 
 .social .linkedin {
   color: rgb(10, 102, 194);
-  font-size: 40px;
-  margin-top: 80px;
 }
 
 .social .facebook {
   color: rgb(8, 102, 255);
-  font-size: 36px;
+  font-size: 31px;
   padding: 2px;
 }
 
 .social .twittr {
   font-size: 30px;
   color: black;
-  margin-bottom: 80px;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .social .whatsApp {
   color: rgb(42, 177, 63);
-  font-size: 41px;
 }
 
 .social .github {
   color: rgb(31, 35, 40);
-  margin-top: 80px;
-  font-size: 41px;
 }
 
 .emailAndPhone {
 }
 
-.address {
+.emailAndPhone a {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cccfd1;
+  text-decoration: none;
+  margin-bottom: -7px;
+  letter-spacing: 1px;
+}
+.emailAndPhone a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 1px;
+  border: 1px solid rgb(114, 111, 111);
+  border-radius: 3px;
+  
 }
 
-.social,
-.emailAndPhone,
-address {
+.emailAndPhone .email {
+  color: rgba(255, 166, 0, 0.692);
+  
 }
+
+.emailAndPhone .phone {
+  color: rgb(12, 138, 100);
+}
+
+.address_info {
+  font-size: 18px;
+  font-style: normal;
+  color: #cccfd1;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-top: -8px;
+}
+
+
+

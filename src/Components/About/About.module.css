@@ -3,7 +3,7 @@
 .about{
     
     height: 90vh;
-    background-color: rgb(252, 252, 252);
+    background-color: rgba(182, 182, 182, 0.767);
     padding: 15px 40px;
     position: relative;
     display: flex;

@@ -53,13 +53,21 @@ const Contact = () => {
             </sapn>
             <h3>Email or Phone -:</h3>
           </div>
-          <a href="#">
-            <MdMarkEmailUnread /> jrashidulislam0103@gmail.com
-          </a>{" "}
-          <br />
-          <a href="#">
-            <FaSquarePhone /> +880 1782-241671 <br /> +880 1849267660
-          </a>
+          <div className={styles.link}>
+            <a href="mailto:jrashidulislam0103@gmail.com?subject=Subject%20Line&body=This%20is%20the%20body%20text">
+              <span className={styles.email}>
+                <MdMarkEmailUnread />
+              </span>
+              jrashidulislam0103@gmail.com
+            </a>
+            <br />
+            <a href="tel:+880 1782-241671">
+              <span className={styles.phone}>
+                <FaSquarePhone />
+              </span>
+              +880 1782-241671 
+            </a>
+          </div>
         </div>
 
         <div className={styles.address}>
@@ -71,11 +79,11 @@ const Contact = () => {
             <h3>Address -:</h3>
           </div>
 
-          <address>
-            Binnabari, Baghabari <br />
+          <div className={styles.address_info}>
+            Binnadari, Baghabari Ghat <br />
             Shahzadpur, Sirajganj <br />
             Rajshahi, Dhaka
-          </address>
+          </div>
         </div>
       </div>
     </div>
