@@ -1,57 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
 
 .about{
-    
-    height: 90vh;
-    background-color: rgba(182, 182, 182, 0.767);
-    padding: 15px 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 5px solid gray;
+  background-color: rgb(51, 53, 53);
+  color: rgb(182, 189, 196);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-family: Inter, sans-serif;
 }
 
 .about_content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 200px;
-}
-
-.about_me{
-    max-width: 583px;
-    font-family: sans-serif;
-    border-left:4px solid rgb(213, 213, 235);
-    padding: 20px 0px 20px 50px;
-    margin-left: -100px;
-}
-
-.about_me h3{
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-}
-.about_me p{
-    font-size: 17px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    margin-top: 10px;
-    line-height: 24px;
-    word-spacing: 3px;
-    letter-spacing: .5px;
+    padding: 30px;
 }
 
 .myabout_image{
-    height: 260px;
-    width: 240px;
-    border: 2px solid gray;
+    padding-top: 30px;
 }
 
-.myabout_image span{
-
-}
 .myabout_image img{
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.image_and_about_me_and_what_i_do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 
 }
+
+.about_me_and_what_i_do{
+    max-width: 790px;
+    padding-top:30px;
+}
+
+.what_i_do{
+    /* padding: 30px 0px; */
+    margin: 30px 0px;
+}
+
+
+.about_me, .what_i_do, .approach {
+    position: relative;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    top: 4px; 
+    left: -22px; 
+    height: 10px;
+    width: 10px;
+    background-color: rgb(204, 91, 214); 
+    border: 3px solid rgb(104, 126, 255);
+    border-radius: 1px;
+    animation: bulletAnimation 1s ease infinite alternate;
+}
+
+@keyframes bulletAnimation {
+    0% {
+        transform: scale(0);
+        background-color: rgb(214, 60, 60);
+        border: 1px solid rgb(230, 201, 149);
+    }
+    50% {
+        transform: scale(1.3);
+        background-color: 
+        rgb(10, 54, 136)
+        ; 
+        border: 1px solid rgb(195, 104, 255);
+    }
+    100% {
+        transform: scale(1);
+        background-color: rgb(41, 150, 90);
+        border: 1px solid rgb(179, 206, 181);
+        border-radius: 50%;
+    }
+}
+
+
+
+.why_work_with_me{
+    border: 2px solid;
+    width: fit-content;
+    margin: 40px auto;
+    margin-bottom: -0px;
+    padding: 15px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.why_work_with_me::before{
+    content: "";
+    position:absolute;
+    width: 180px;
+    height: 140%;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(8,8, 8);
+    animation: animation 4s linear infinite;
+
+}
+
+.why_work_with_me::after{
+    content: "";
+    position:absolute;
+    width: 180px;
+    height: 140%;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(8,8, 8);
+    animation: animation 4s linear infinite;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .image_and_about_me_and_what_i_do{
+        align-items: start;
+        gap: 50px;
+    }
+
+   
+}
+@media only screen and (max-width: 768px){
+    .image_and_about_me_and_what_i_do{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    h3::before {
+    content: "";
+    position: absolute;
+    top: 4px; 
+    left: -22px; 
+    height: 10px;
+    width: 10px;
+    background-color: rgb(204, 91, 214); 
+    border: 3px solid rgb(104, 126, 255);
+    border-radius: 1px;
+    animation: bulletAnimation 1s ease infinite alternate;
+}
+
+   
+}
+
+
+
+
 
 

@@ -26,11 +26,9 @@
 
 .download_resumeBtn {
   margin: 70px 0px 0px 380px;
-
-
 }
 
-.download_resumeBtn button {
+.download_resumeBtn a button{
   padding: 11px 20px;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -38,20 +36,20 @@
   font-style: italic;
   cursor: pointer;
   z-index: 0;
-  /* position: absolute;
-  top: 300px;
-  right: 400px; */
+  position: absolute;
+  top: 360px;
+  right: 780px;
   border: none;
   outline: none;
   border-radius: 1px;
   transition: all .8s ease;
 }
 
-.download_resumeBtn button:before {
+.download_resumeBtn a button:before{
   z-index: 1;
   position: absolute;
   top: 0;
-  left: -100%;
+  right: -100%;
   width: 100%;
   height: 100%;
   content: "";
@@ -61,14 +59,13 @@
   visibility: hidden;
 }
 
-.download_resumeBtn button:hover:before {
-  left:0;
+.download_resumeBtn a button:hover:before {
+  right:0;
   opacity: 1;
   visibility: visible;
-  
 }
 
-.download_resumeBtn button:hover{
+.download_resumeBtn a button:hover{
   box-shadow: 3px 3px 10px #ffffff;
 }
 

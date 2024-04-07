@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
 import styles from "./Contact.module.css";
 import { FaSquareGithub } from "react-icons/fa6";
@@ -27,7 +28,7 @@ const Contact = () => {
           </div>
 
           <div className={styles.socialIcons}>
-            <a href="#" title="Linkedin" className={styles.linkedin}>
+            <a target="_blank" href="https://www.linkedin.com/in/rashidulislam71/" title="Linkedin" className={styles.linkedin}>
               <FaLinkedin />
             </a>
             <a href="#" title="Facebook" className={styles.facebook}>

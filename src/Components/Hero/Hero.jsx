@@ -35,7 +35,6 @@ const Hero = () => {
     <div className={styles.hero_section}>
       <div className={styles.hero_text}>
         <div>{displayedText}</div>
-       
       </div>
       <div className={styles.download_resumeBtn}>
        <a href="https://drive.google.com/file/d/1N2q28n1klhV8A1dJkLw9gsWUqf251wP9/view?usp=sharing" target="_blank"><button>Download Resume</button></a>

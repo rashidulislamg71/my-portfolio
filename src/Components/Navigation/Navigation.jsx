@@ -114,6 +114,10 @@
 
 // export default Navigation;
 
+
+
+
+
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import styles from "./Navigation.module.css";
@@ -129,11 +133,6 @@ const Navigation = () => {
   const showNavbar = () => {
     navRef.current.classList.toggle(styles.responsive_nav);
     setShowMenu(!showMenu);
-  };
-
-  const closeNavbar = () => {
-    navRef.current.classList.remove(styles.responsive_nav);
-    setShowMenu(false);
   };
 
   return (
@@ -211,8 +210,8 @@ const Navigation = () => {
         {showMenu ? (
           <button
             className={`${styles.nav_btn} ${styles.nav_close_btn}`}
-            onClick={closeNavbar}
-            >
+            onClick={showNavbar}
+          >
             <FiX />
           </button>
         ) : (
