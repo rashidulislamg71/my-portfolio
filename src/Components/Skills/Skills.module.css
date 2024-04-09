@@ -1,6 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.skills_section{
-    height: 300px;
-    background-color: rgb(68, 50, 50);
-    color: white;
+.skills_section {
+  /* background-color: rgb(68, 50, 50); */
+  color: rgb(77, 75, 75);
+  padding: 60px 30px;
+  border-top: 1px solid rgba(196, 193, 193, 0.644);
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+  background-color: rgba(5, 5, 5, 0.856);
+  font-size: 25px;
+  border-radius: 3px;
+  color: rgb(220, 220, 220);
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.skills_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.inner_content {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.circular_progress {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular_progress::before {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: #fafafa;
+}
+
+.progress_value {
+  color: green;
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: #7d2ae8;
+}
+
+.skill_name {
+}
+
+@media only screen and (max-width: 1024px) {
+  .skills_content {
+    flex-wrap: wrap;
+  }
+
+  .skills_section {
+
+  }
 }

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .hero_section {
-  height: 100vh;
+  height: 600px;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(43,47,64,1) 0%, rgba(30,30,70,1) 0%, rgba(43,80,91,1) 82%, rgba(43,85,92,1) 100%);
   position: relative;
 }

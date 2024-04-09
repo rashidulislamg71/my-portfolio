@@ -8,6 +8,7 @@ const About = () => {
   return (
     <div className={styles.about}>
       <div className={styles.about_content}>
+          <h4 className={styles.title}>About Myself</h4>
         <div className={styles.image_and_about_me_and_what_i_do}>
           <div className={styles.myabout_image}>
             <img src={about_img_Rashidul_Islam} alt="Rashidul Islam" />
@@ -35,7 +36,7 @@ const About = () => {
               </p>
             </div>
             <div className={styles.approach}>
-             <h3> My Approach:</h3> 
+              <h3> My Approach:</h3>
               <p>
                 I approach each project with meticulous attention to detail,
                 striving for perfection in every aspect of front-end
@@ -48,30 +49,22 @@ const About = () => {
         </div>
 
         <div className={styles.why_work_with_me}>
-          <div>
-            <h3>Why Work Wiht Me:</h3>
-            <li>
-              <span>
-                <b>Passion for Coding.</b>
-              </span>
-            </li>
+          <h3>Why Work Wiht Me:</h3>
+          <li>
+            <span>Passion for Coding.</span>
+          </li>
 
-            <li>
-              <span>
-                <b>Clean Code.</b>
-              </span>
-            </li>
+          <li>
+            <span>Clean & Efficient Code.</span>
+          </li>
 
-            <li>
-              <span>
-                <b>Pixel-Perfect Design.</b>
-              </span>
-            </li>
-          </div>
-
+          <li>
+            <span>Pixel-Perfect Responsive Design.</span>
+          </li>
         </div>
+      </div>
 
-        {/* <div className={styles.collaborate}>
+      {/* <div className={styles.collaborate}>
           <h3>Let's Collaborate:</h3>
           <span>
             If you're looking for a Front-end Web Developer who is dedicated to
@@ -80,7 +73,6 @@ const About = () => {
             exceptional digital experiences.
           </span>
         </div> */}
-      </div>
     </div>
   );
 };
