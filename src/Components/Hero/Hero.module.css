@@ -1,34 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 .hero_section {
   height: 600px;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(43,47,64,1) 0%, rgba(30,30,70,1) 0%, rgba(43,80,91,1) 82%, rgba(43,85,92,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(43, 47, 64, 1) 0%,
+    rgba(30, 30, 70, 1) 0%,
+    rgba(43, 80, 91, 1) 82%,
+    rgba(43, 85, 92, 1) 100%
+  );
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
 }
 
 .hero_text {
-  font-size: 50px;
-  color: white;
-  margin:0px auto;
-  padding-top: 130px;
-  /* margin-left: 300px;
-  padding-top: 330px;
-  transform: translateY(-50%); */
+  color: #fffffff6;
+  max-width: 600px;
+}
+
+.greetings {
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+
+.addressing {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+
+.addressing h1 {
+  color: rgba(0, 255, 255, 0.856);
+  font-size: 38px;
   font-family: "Pacifico", cursive;
-  
   font-weight: 400;
-  line-height: 60px;
-  width: 600px;
-  height: 300px;
+  letter-spacing: 2px;
+}
+
+.addressing p {
+  font-size: 25px;
+}
+
+.addressing span {
+  font-weight: 400;
+  color: rgb(208, 67, 136);
+}
+
+.addressing small {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.addressing small .read_more_btn {
+  background: #fff;
+  color: rgb(34, 44, 76);
+  padding: 3px;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  transition: all .4s ease;
+}
+
+.addressing small .read_more_btn:hover{
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.849);
 }
 
 .download_resumeBtn {
-  margin: 70px 0px 0px 380px;
+  margin: 30px 0px 0px 0px;
 }
 
-.download_resumeBtn a button{
+.download_resumeBtn a button {
   padding: 11px 20px;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -37,162 +87,198 @@
   cursor: pointer;
   z-index: 0;
   position: absolute;
-  top: 360px;
-  right: 780px;
+  /* left: 500px; */
   border: none;
   outline: none;
   border-radius: 1px;
-  transition: all .8s ease;
+  transition: all 0.8s ease;
+  background-color: #ffffff;
 }
 
-.download_resumeBtn a button:before{
-  z-index: 1;
+.download_resumeBtn a button:before {
+  content: "";
   position: absolute;
   top: 0;
+  z-index: 1;
   right: -100%;
   width: 100%;
   height: 100%;
-  content: "";
-  background:rgb(38, 61, 83, 0.377);
-  transition: all .8s ease;
+  background: rgba(34, 44, 76, 0.411);
+  transition: all 0.8s ease;
   opacity: 0;
   visibility: hidden;
 }
 
 .download_resumeBtn a button:hover:before {
-  right:0;
+  right: 0;
   opacity: 1;
   visibility: visible;
 }
 
-.download_resumeBtn a button:hover{
+.download_resumeBtn a button:hover {
   box-shadow: 3px 3px 10px #ffffff;
 }
 
+/**Hero img css start**/
 
-
-.animation_box{
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    border: 2px solid rgb(54, 173, 177);
-    border-radius: 50%;
-    background-color: #ffffff;
+.hero_img {
+  margin-left: 120px;
 }
 
-.animation .animation_box:nth-child(1){
-  position: absolute;
-    left: -10px;
-    top: -4px;
-    animation: animate 9s linear infinite;
+.hero_img img {
+  margin-top: 30px;
 }
-.animation .animation_box:nth-child(2){
-  position: absolute;
-    left: 200px;
-    top: 29px;
-    animation: animate 5s linear infinite;
+
+/**Hero img css end**/
+
+/** Hero css Social Btn start**/
+
+.hero_social_btn{
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+
 }
-.animation .animation_box:nth-child(3){
-  position: absolute;
-    left: 1000px;
-    top: 44px;
-    animation: animate 7s linear infinite;
+.hero_social_btn a{
+  font-size: 35px;
+  padding: 6px;
+  color: #2c2e2e;
+  border: 4px solid rgb(228, 48, 132);
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1ccbe2;
+  transition: all .3s ease;
+  box-shadow: 2px 2px 20px rgb(228, 48, 132);
 }
-.animation .animation_box:nth-child(4){
-  position: absolute;
-    right: 10px;
-    top: 20px;
-    animation: animate 10s linear infinite;
+
+.hero_social_btn a:hover{
+  box-shadow: 2px 2px 20px #1ccbe2;
 }
-.animation .animation_box:nth-child(5){
+
+
+
+/** Hero css Social Btn end**/
+
+.animation_box {
   position: absolute;
-    left: 450px;
-    top: 100px;
-    animation: animate 6s linear infinite;
+  height: 35px;
+  width: 35px;
+  border: 2px solid rgb(54, 173, 177);
+  border-radius: 50%;
+  background-color: #ffffff;
 }
-.animation .animation_box:nth-child(6){
+
+.animation .animation_box:nth-child(1) {
   position: absolute;
-    left: 700px;
-    top: 4px;
-    animation: animate 3s linear infinite;
+  left: -10px;
+  top: -4px;
+  animation: animate 9s linear infinite;
 }
-.animation .animation_box:nth-child(7){
+.animation .animation_box:nth-child(2) {
+  position: absolute;
+  left: 200px;
+  top: 29px;
+  animation: animate 5s linear infinite;
+}
+.animation .animation_box:nth-child(3) {
+  position: absolute;
+  left: 1000px;
+  top: 44px;
+  animation: animate 7s linear infinite;
+}
+.animation .animation_box:nth-child(4) {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  animation: animate 10s linear infinite;
+}
+.animation .animation_box:nth-child(5) {
+  position: absolute;
+  left: 450px;
+  top: 100px;
+  animation: animate 6s linear infinite;
+}
+.animation .animation_box:nth-child(6) {
+  position: absolute;
+  left: 700px;
+  top: 4px;
+  animation: animate 3s linear infinite;
+}
+.animation .animation_box:nth-child(7) {
   position: absolute;
   left: 1043px;
   top: 209px;
-    animation: animate 10s linear infinite;
-    
+  animation: animate 10s linear infinite;
 }
-.animation .animation_box:nth-child(8){
+.animation .animation_box:nth-child(8) {
   position: absolute;
-    left: 830px;
-    top: 250px;
-    animation: animate 4s linear infinite;
+  left: 830px;
+  top: 250px;
+  animation: animate 4s linear infinite;
 }
-.animation .animation_box:nth-child(9){
+.animation .animation_box:nth-child(9) {
   position: absolute;
-    left: 100px;
-    top: 350px;
-    animation: animate 6s linear infinite;
+  left: 100px;
+  top: 500px;
+  animation: animate 6s linear infinite;
 }
-.animation .animation_box:nth-child(10){
+.animation .animation_box:nth-child(10) {
   position: absolute;
-    left: 100px;
-    top: 200px;
-    animation: animate 10s linear infinite;
+  left: 100px;
+  top: 200px;
+  animation: animate 10s linear infinite;
 }
-.animation .animation_box:nth-child(11){
+.animation .animation_box:nth-child(11) {
   position: absolute;
-    left: 190px;
-    top: 240px;
-    animation: animate 9s linear infinite;
+  left: 190px;
+  top: 240px;
+  animation: animate 9s linear infinite;
 }
-.animation .animation_box:nth-child(12){
+.animation .animation_box:nth-child(12) {
   position: absolute;
-    left:580px;
-    top:200px;
-    animation: animate 3s linear infinite;
+  left: 580px;
+  top: 200px;
+  animation: animate 3s linear infinite;
 }
-.animation .animation_box:nth-child(13){
+.animation .animation_box:nth-child(13) {
   position: absolute;
-    left: 900px;
-    bottom: 10px;
-    animation: animate 6s linear infinite;
+  left: 900px;
+  bottom: 10px;
+  animation: animate 6s linear infinite;
 }
-.animation .animation_box:nth-child(14){
+.animation .animation_box:nth-child(14) {
   position: absolute;
-    right: -10px;
-    bottom: 40px;
-    animation: animate 5s linear infinite;
+  right: -10px;
+  bottom: 40px;
+  animation: animate 5s linear infinite;
 }
-.animation .animation_box:nth-child(15){
+.animation .animation_box:nth-child(15) {
   position: absolute;
-    right: 50px;
-    top: 239px;
-    animation: animate 3s linear infinite;
+  right: 50px;
+  top: 239px;
+  animation: animate 3s linear infinite;
 }
-.animation .animation_box:nth-child(16){
+.animation .animation_box:nth-child(16) {
   position: absolute;
-    left: 500px;
-    bottom: 69px;
-    animation: animate 10s linear infinite;
+  left: 500px;
+  bottom: 69px;
+  animation: animate 10s linear infinite;
 }
-.animation .animation_box:nth-child(17){
+.animation .animation_box:nth-child(17) {
   position: absolute;
   left: 1080px;
   bottom: 85px;
-    animation: animate 4s linear infinite;
+  animation: animate 4s linear infinite;
 }
 
-
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     transform: scale(0) translateY(0) rotate(0);
     opacity: 1;
   }
-  100%{
+  100% {
     transform: scale(1.5) translateY(-70px) rotate(360deg);
     opacity: 0;
   }
 }
-

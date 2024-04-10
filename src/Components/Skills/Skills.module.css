@@ -2,7 +2,8 @@
 
 .skills_section {
   color: rgb(77, 75, 75);
-  padding: 60px 30px;
+  background-color: rgb(27, 26, 26);
+  padding: 60px 80px;
   border-top: 1px solid rgba(196, 193, 193, 0.644);
   font-family: "Saira Condensed", sans-serif;
   font-weight: 600;

@@ -147,7 +147,9 @@ const Navigation = () => {
             duration={400}
             delay={0.8}
           >
-            <img src={portfolio_logo} alt="" />
+            {/* <img src={portfolio_logo} alt="" /> */}
+            <h5>Rashidul</h5>
+            <h4>Islam</h4>
           </Link>
         </div>
         <nav ref={navRef} className={styles.navigation_section}>

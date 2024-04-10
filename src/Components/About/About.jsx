@@ -3,12 +3,15 @@
 
 import styles from "./About.module.css";
 import about_img_Rashidul_Islam from "../../assets/images/Rashidul_islam.png";
+import coding from "../../assets/images/about img/coding.png";
+import programming from "../../assets/images/about img/programming.png";
+import responsive from "../../assets/images/about img/responsive devices.png";
 
 const About = () => {
   return (
     <div className={styles.about}>
       <div className={styles.about_content}>
-          <h4 className={styles.title}>About Myself</h4>
+        <h4 className={styles.title}>About Myself</h4>
         <div className={styles.image_and_about_me_and_what_i_do}>
           <div className={styles.myabout_image}>
             <img src={about_img_Rashidul_Islam} alt="Rashidul Islam" />
@@ -47,20 +50,37 @@ const About = () => {
             </div>
           </div>
         </div>
-
         <div className={styles.why_work_with_me}>
-          <h3>Why Work Wiht Me:</h3>
-          <li>
-            <span>Passion for Coding.</span>
-          </li>
+          <h3 className={styles.title}>Why Work Wiht Me:</h3>
+          <div className={styles.why_work_with_me_content}>
+            <div className={styles.work_styles}>
+              <img src={coding} alt="passion" />
+              <h5>Passion for Coding</h5>
+              <p>
+                Coding isn't just a job for me; it's my passion. I take pride in
+                my work and am constantly seeking ways to improve and innovate.
+              </p>
+            </div>
 
-          <li>
-            <span>Clean & Efficient Code.</span>
-          </li>
+            <div className={styles.work_styles}>
+              <img src={programming} alt="Coding" />
+              <h5>Clean & Efficient Code</h5>
+              <p>
+                I adhere to best coding practices and standards, ensuring that
+                my code is not only functional but also maintainable and
+                scalable.
+              </p>
+            </div>
 
-          <li>
-            <span>Pixel-Perfect Responsive Design.</span>
-          </li>
+            <div className={styles.work_styles}>
+              <img src={responsive} alt="Responsive" />
+              <h5>Pixel-Perfect Design</h5>
+              <p>
+                I ensure pixel-perfect designs, optimizing layouts, typography,
+                and animations for stunning cross-device performance.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
