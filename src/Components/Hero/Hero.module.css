@@ -122,11 +122,12 @@
 /**Hero img css start**/
 
 .hero_img {
-  margin-left: 120px;
+  margin-left: 200px;
 }
 
 .hero_img img {
-  margin-top: 30px;
+  margin-top: 33px;
+  opacity: .9;
 }
 
 /**Hero img css end**/
@@ -285,24 +286,12 @@
 
 
 @media only screen and (max-width: 1024px) {
-  
-}
-
-
-@media only screen and (max-width: 768px) {
-  .hero_img{
-    /* display: none; */
-  }
-}
-
-@media only screen and (max-width:480px ) {
-
   .hero_section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 22px;
+    padding: 15px;
     position: relative;
   }
   
@@ -332,85 +321,18 @@
     font-size: 22px;
   }
   
-  .addressing span {
-    font-weight: 400;
-    color: rgb(208, 67, 136);
-  }
-  
   .addressing small {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.61);
   }
   
-  .addressing small .read_more_btn {
-    background: #fff;
-    color: rgb(34, 44, 76);
-    padding: 3px;
-    margin-top: 10px;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 1px;
-    transition: all .4s ease;
-  }
   
-  .addressing small .read_more_btn:hover{
-    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.849);
-  }
-  
-  .download_resumeBtn {
-    margin: 30px 0px 0px 0px;
-  }
-  
-  .download_resumeBtn a button {
-    padding: 11px 20px;
-    font-size: 17px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    cursor: pointer;
-    z-index: 0;
-    position: absolute;
-    /* left: 500px; */
-    border: none;
-    outline: none;
-    border-radius: 1px;
-    transition: all 0.8s ease;
-    background-color: #ffffff;
-  }
-  
-  .download_resumeBtn a button:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(34, 44, 76, 0.411);
-    transition: all 0.8s ease;
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .download_resumeBtn a button:hover:before {
-    right: 0;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .download_resumeBtn a button:hover {
-    box-shadow: 3px 3px 10px #ffffff;
-  }
-  
-
-
   .hero_img{
     position: absolute;
-    top: 50px;
+    bottom: -1px;
     right: -180px;
     z-index: 0;
-    opacity: .2;
+    opacity: .4;
   }
 
   .hero_img img{
@@ -418,3 +340,5 @@
     width:auto;
   }
 }
+
+

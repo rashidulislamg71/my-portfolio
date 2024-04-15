@@ -5,14 +5,15 @@
   font-family: "Saira Condensed", sans-serif;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.836);
-  background-color: rgb(27, 26, 26);
+  background-color: rgb(31, 44, 44);
 } 
 
 .title{
     text-align: center;
-    background-color: rgba(5, 5, 5, 0.856);
+    background-color: rgba(5, 5, 5, 0.548);
     font-size: 25px;
     border-radius: 3px;
+    box-shadow: 2px 2px 10px rgba(115, 179, 179, 0.411);
 }
 
 .projects_content {
@@ -29,14 +30,17 @@
 
 
 .projects_app {
+
 }
 
 .todo_app {
     position: relative;
     background-color: rgb(3, 25, 44);
+    transition: all .5s ease;
+    box-shadow: 2px 2px 20px rgb(81, 204, 204);
 }
 
-.todo_app::before{
+/* .todo_app::before{
     content: "";
     position: absolute;
     left: -3px;
@@ -57,15 +61,15 @@
     border-right: 4px solid transparent;
     border-top:  4px solid transparent;
     animation: border_animation 5s linear infinite;
-    transition: all 1s ease;
-}
+    
+} */
 
 .todo_app:hover{
-  box-shadow: 2px 2px 15px rgb(117, 202, 150);
+  box-shadow: 2px 2px 20px rgb(21, 112, 139);
 }
 
 
-@keyframes border_animation {
+/* @keyframes border_animation {
   0% {
     border-color: rgb(27, 180, 190);
     border-radius: 1px;
@@ -84,11 +88,9 @@
     width: 0%;
     height: 0%;
   }
-}
+} */
 
 .app_box {
-  height: auto;
-  max-width: 350px;
   padding: 10px;
 }
 
@@ -142,7 +144,7 @@
 
 @media only screen and (max-width: 1024px) {
   .projects_section {
-    padding: 60px 20px ;
+    padding: 40px 15px ;
   } 
 
   .my_projects{
@@ -153,6 +155,10 @@
     gap: 30px;
     padding-top: 40px;
   }
+
+  .todo_app {
+    width: 350px;
+}
 }
 
 
