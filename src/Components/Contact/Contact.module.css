@@ -1,47 +1,64 @@
+
+
 .contact_section {
+  background: rgb(2, 15, 19);
   font-family: sans-serif;
-  height: 500px;
-  background-color: rgb(81, 94, 105);
-  padding: 20px 60px;
+  height: 600px;
+  padding: 30px 80px;
   color: white;
+  border-top: 60px solid rgba(172, 7, 89, 0.781);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
-h2 {
+h2.title {
   text-align: center;
-  border-bottom: 1px solid rgb(106, 112, 116);
-  width: fit-content;
-  margin: 40px auto 70px;
+  background-color: rgba(0, 0, 0, 0.322);
+  font-size: 25px;
+  border-radius: 3px;
+  color: rgb(220, 220, 220);
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-weight: bold;
+  box-shadow: 2px 2px 15px rgb(19, 65, 75);
+  width: 100%;
+  border: none;
+  padding: 0px;
+  margin-bottom: 100px;
 }
 
 .contact_info {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .title {
-  border: 1px solid rgb(117, 117, 117);
+  /* border: 1px solid rgba(16, 93, 107, 0.61); */
+  border-radius: 2px;
   width: fit-content;
-  color: rgb(21, 44, 65);
-  margin-bottom: 40px;
+  color: rgba(233, 225, 231, 0.911);
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 8px;
-  padding: 5px;
+  padding: 3px 5px;
+  box-shadow: 2px 2px 15px rgb(19, 65, 75);
 }
 
 .title h3 {
 }
 
 .title sapn {
-  border-right: 1px solid gray;
+  border-right: 1px solid rgba(7, 78, 90, 0.925);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(253, 253, 253);
+  color: rgba(207, 33, 115, 0.726);
   padding: 3px;
 }
 
@@ -53,14 +70,20 @@ h2 {
 
 .linkedin,
 .facebook,
-.github,
-.whatsApp,
-.twittr {
+.github {
   display: flex;
   justify-content: center;
-  background-color: #ffff;
+  background-color: #4c4e4e;
   border-radius: 3px;
   font-size: 35px;
+  box-shadow: 2px 2px 1px rgb(202, 110, 148);
+  transition: all 0.5s;
+}
+
+.linkedin:hover,
+.facebook:hover,
+.github:hover {
+  box-shadow: 2px 2px 15px rgb(202, 110, 148);
 }
 
 .social .linkedin {
@@ -73,7 +96,7 @@ h2 {
   padding: 2px;
 }
 
-.social .twittr {
+/* .social .twittr {
   font-size: 30px;
   color: black;
   font-size: 34px;
@@ -81,10 +104,10 @@ h2 {
 
 .social .whatsApp {
   color: rgb(42, 177, 63);
-}
+} */
 
 .social .github {
-  color: rgb(31, 35, 40);
+  color: rgb(237, 239, 241);
 }
 
 .emailAndPhone {
@@ -108,12 +131,10 @@ h2 {
   padding: 1px;
   border: 1px solid rgb(114, 111, 111);
   border-radius: 3px;
-  
 }
 
 .emailAndPhone .email {
   color: rgba(255, 166, 0, 0.692);
-  
 }
 
 .emailAndPhone .phone {
@@ -129,5 +150,21 @@ h2 {
   margin-top: -8px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .contact_section {
+    padding: 30px 15px;
+  }
 
+  h2.title{
+    margin-bottom: 50px;
+  }
+  
 
+  .contact_info {
+    display: flex;
+    padding-left: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+}

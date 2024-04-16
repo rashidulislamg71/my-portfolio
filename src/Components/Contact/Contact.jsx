@@ -17,33 +17,35 @@ import { MdContactless } from "react-icons/md";
 const Contact = () => {
   return (
     <div className={styles.contact_section}>
-      <h2>Contact Me</h2>
+      <h2 className={styles.title}>Contact Me</h2>
       <div className={styles.contact_info}>
         <div className={styles.social}>
           <div className={styles.title}>
             <sapn>
               <IoShareSocialSharp />
             </sapn>
-            <h3>Social -:</h3>
+            <h3>Social -</h3>
           </div>
 
           <div className={styles.socialIcons}>
-            <a target="_blank" href="https://www.linkedin.com/in/rashidulislam71/" title="Linkedin" className={styles.linkedin}>
+            <a target="_blank" title="Linkedin"  href="https://www.linkedin.com/in/rashidulislam71/" title="Linkedin" className={styles.linkedin}>
               <FaLinkedin />
             </a>
-            <a href="#" title="Facebook" className={styles.facebook}>
+            <a target="_blank" title="Facebook" href="https://web.facebook.com/rashidulislam72/" className={styles.facebook}>
               <ImFacebook2 />
             </a>
-            <a href="#" title="Twitter" className={styles.twittr}>
+
+            <a target="_blank" href="https://github.com/rashidulislamg71" title="Github" className={styles.github}>
+              <FaSquareGithub />
+            </a>
+
+            {/* <a href="#" title="Twitter" className={styles.twittr}>
               <FaXTwitter />
             </a>
 
             <a href="#" title="WhatsApp" className={styles.whatsApp}>
               <FaWhatsappSquare />
-            </a>
-            <a href="#" title="Github" className={styles.github}>
-              <FaSquareGithub />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -52,7 +54,7 @@ const Contact = () => {
             <sapn>
               <MdContactless />
             </sapn>
-            <h3>Email or Phone -:</h3>
+            <h3>Email or Phone -</h3>
           </div>
           <div className={styles.link}>
             <a href="mailto:jrashidulislam0103@gmail.com?subject=Subject%20Line&body=This%20is%20the%20body%20text">
@@ -77,12 +79,11 @@ const Contact = () => {
               {" "}
               <MdAddLocationAlt />{" "}
             </sapn>
-            <h3>Address -:</h3>
+            <h3>Address -</h3>
           </div>
 
           <div className={styles.address_info}>
-            Binnadari, Baghabari Ghat <br />
-            Shahzadpur, Sirajganj <br />
+            Sirajganj <br />
             Rajshahi, Dhaka
           </div>
         </div>

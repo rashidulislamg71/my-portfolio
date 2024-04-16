@@ -6,6 +6,7 @@
   font-weight: 100;
   color: rgba(255, 255, 255, 0.836);
   background-color: rgb(31, 44, 44);
+  border-top: 2px solid rgba(202, 224, 231, 0.822);
 } 
 
 .title{
