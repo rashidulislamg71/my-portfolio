@@ -150,7 +150,7 @@ const Navigation = () => {
             delay={0.8}
           >
             {/* <img src={portfolio_logo} alt="" /> */}
-            <h5>Rashidul</h5>
+            <p>Rashidul</p>
             <h4>Islam</h4>
           </Link>
         </div>
