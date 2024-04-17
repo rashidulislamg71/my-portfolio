@@ -94,9 +94,9 @@
   align-items: center;
   border-radius: 50%;
   color: rgb(199, 238, 233);
-  padding: 10px;
+  padding: 6px;
   box-shadow: 2px 2px 5px rgb(11, 109, 104);
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .skill_logo h5 {
@@ -169,6 +169,10 @@
   border-radius: 10px;
 }
 
+.tools_name .vscode{
+ 
+}
+
 .tools_name img {
   height: 90px;
   width: 100px;
@@ -176,7 +180,7 @@
 
 /** Tools css end**/
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .skills_section {
     padding: 30px 15px;
   }

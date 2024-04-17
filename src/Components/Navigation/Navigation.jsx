@@ -127,6 +127,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useRef } from "react";
 
 const Navigation = () => {
+  const [activeLink, setActiveLink] = useState(false)
   const [showMenu, setShowMenu] = useState(false);
   const navRef = useRef();
 
@@ -134,6 +135,7 @@ const Navigation = () => {
     navRef.current.classList.toggle(styles.responsive_nav);
     setShowMenu(!showMenu);
   };
+
 
   return (
     <div>

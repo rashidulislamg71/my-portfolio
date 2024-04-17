@@ -69,8 +69,8 @@ const Hero = () => {
               
             </small>
             <div className={styles.hero_social_btn}>
-              <a className={styles.linkedin_btn} href=""><FaLinkedin /></a>
-              <a className={styles.GitHub_btn} href=""><FaSquareGithub /></a>
+              <a className={styles.linkedin_btn} target="_blank" title="Linkedin" href="https://www.linkedin.com/in/rashidulislam71/"><FaLinkedin /></a>
+              <a  className={styles.GitHub_btn} target="_blank" title="Github" href="https://github.com/rashidulislamg71" ><FaSquareGithub /></a>
             </div>
           </div>
         </div>

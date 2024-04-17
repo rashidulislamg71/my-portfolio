@@ -87,6 +87,7 @@ import styles from "./Skills.module.css";
 import figma from "../../assets/images/figma.png";
 import git from "../../assets/images/git.png";
 import firebase from "../../assets/images/firebase.png";
+import vscode from "../../assets/images/vscode.png"
 
 //*Skills Logo */
 import { PiFileHtmlBold } from "react-icons/pi";
@@ -145,7 +146,7 @@ const Skills = () => {
       <div className={styles.tools}>
         <div className={styles.tools_name}>
           <div>
-            <img src={figma} alt="Figma" /> <span>VS Code</span>
+            <img className={styles.vscode} src={vscode} alt="Figma" /> <span>VS Code</span>
           </div>
           <div>
             <img src={figma} alt="Figma" /> <span>Figma</span>

@@ -285,7 +285,7 @@
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .hero_section {
     height: 100vh;
     display: flex;

@@ -143,7 +143,7 @@
 
 
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .projects_section {
     padding: 40px 15px ;
   } 
