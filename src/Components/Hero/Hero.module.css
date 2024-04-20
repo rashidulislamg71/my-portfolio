@@ -328,6 +328,9 @@
     color: rgba(255, 255, 255, 0.61);
   }
   
+  .hero_social_btn a{
+    z-index: 1;
+  }
   
   .hero_img{
     position: absolute;
