@@ -23,6 +23,7 @@
 .hero_text {
   color: #fffffff6;
   max-width: 600px;
+  z-index: 1;
 }
 
 .greetings {
@@ -150,6 +151,7 @@
 
 .hero_img {
   margin-left: 200px;
+  z-index: 0;
 }
 
 .hero_img img {
