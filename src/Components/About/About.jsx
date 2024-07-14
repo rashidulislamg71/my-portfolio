@@ -51,7 +51,7 @@ const About = () => {
           </div>
         </div>
         <div className={styles.why_work_with_me}>
-          <h3 className={styles.title}>Why Work Wiht Me:</h3>
+          <h3 className={styles.title}>Why Work With Me</h3>
           <div className={styles.why_work_with_me_content}>
             <div className={styles.work_styles}>
               <img src={coding} alt="passion" />

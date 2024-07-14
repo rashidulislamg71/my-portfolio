@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
@@ -5,11 +6,13 @@ import { useEffect } from "react";
 import styles from "./Hero.module.css";
 import { useState } from "react";
 import hero_img from "../../assets/images/Hero img.png";
+import rashidul from "../../assets/images/Rashidul_islam (2).png";
 import { Link } from 'react-scroll';
 
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { ImFacebook2 } from "react-icons/im";
+
 
 
 const Hero = () => {
@@ -85,7 +88,7 @@ const Hero = () => {
       </div>
 
       <div className={styles.hero_img}>
-        <img src={hero_img} alt="Flower" />
+        <img src={rashidul} alt="Rashidul Islam" />
       </div>
 
       <div className={styles.animation}>

@@ -1,87 +1,4 @@
-// import React, { useState, useEffect } from "react";
-// import styles from "./Skills.module.css";
-// import figma from "../../assets/images/figma.png";
-// import git from "../../assets/images/git.png";
-// import firebase from "../../assets/images/firebase.png";
 
-// const Skills = () => {
-//   const [progressValues, setProgressValues] = useState({
-//     HTML: 0,
-//     CSS: 0,
-//     "Tailwind CSS": 0,
-//     JavaScript: 0,
-//     "React.js": 0,
-//   });
-
-//   useEffect(() => {
-//     const speed = 40;
-
-//     const progressEndValues = {
-//       HTML: 80,
-//       CSS: 75,
-//       "Tailwind CSS": 60,
-//       JavaScript: 60,
-//       "React.js": 50,
-//     };
-
-//     const progress = setInterval(() => {
-//       setProgressValues((prevValues) => {
-//         const newValues = {};
-//         for (const key in prevValues) {
-//           newValues[key] =
-//             prevValues[key] < progressEndValues[key]
-//               ? prevValues[key] + 1
-//               : progressEndValues[key];
-//         }
-//         return newValues;
-//       });
-//     }, speed);
-
-//     return () => clearInterval(progress);
-//   }, []); // Empty dependency array ensures this effect runs only once after component mount
-
-//   return (
-//     <div className={styles.skills_section}>
-//       <h3 className={styles.title}>Skills And Tools</h3>
-//       <div className={styles.skills_content}>
-//         {Object.keys(progressValues).map((skill) => (
-//           <div className={styles.inner_content} key={skill}>
-//             <div
-//               className={styles.circular_progress}
-//               style={{
-//                 background: `conic-gradient(#7d2ae8 ${
-//                   progressValues[skill] * 3.6
-//                 }deg, #ededed 0deg)`,
-//               }}
-//             >
-//               <span className={styles.progress_value}>
-//                 {progressValues[skill]}%
-//               </span>
-//             </div>
-//             <span className={styles.skill_name}>{skill}</span>
-//           </div>
-//         ))}
-//       </div>
-
-//       <div className={styles.tools}>
-//         <div className={styles.tools_content}>
-//           <div>
-//             <img src={figma} alt="Figma" /> <span>Figma</span>
-//           </div>
-
-//           <div>
-//             <img src={git} alt="Git" /> <span>Git</span>
-//           </div>
-//           <div>
-//             <img src={firebase} alt="Firebase" /> <span>Firebase</span>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Skills;
 
 import styles from "./Skills.module.css";
 import figma from "../../assets/images/figma.png";
@@ -153,7 +70,7 @@ const Skills = () => {
           </div>
 
           <div>
-            <img src={git} alt="Git" /> <span>Git</span>
+            <img src={git} alt="Git" /> <span>Git&GitHub</span>
           </div>
           <div>
             <img src={firebase} alt="Firebase" /> <span>Firebase</span>

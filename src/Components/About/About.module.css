@@ -87,7 +87,7 @@ h3{
     font-style: oblique;
 }
 
-h3::before {
+/* h3::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -119,7 +119,7 @@ h3::before {
   }
 }
 
-
+ */
 
 .why_work_with_me{
   text-align: center;
